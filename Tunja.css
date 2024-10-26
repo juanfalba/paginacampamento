@@ -1,0 +1,287 @@
+:root {
+    --color-fondo: linear-gradient(to right, #a8e0f7, #ff7e5f);
+    --color-header: #007BFF;
+    --color-text: #333;
+    --color-secundario: #ffffff;
+    --color-titulo: #007BFF;
+    --color-subtitulo: #ff6b6b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+    background: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-header);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+#lista-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 80px; /* Aumentado el margen izquierdo para hacer espacio al logo */
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 0 10px;
+    background: linear-gradient(45deg, #007BFF, #00C6FF);
+    color: var(--color-secundario);
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.enlace-menu {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo-link {
+    position: absolute;
+    top: 10px; /* Mantener la distancia desde la parte superior */
+    left: 10px; /* Mantener en la esquina izquierda */
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-text);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: var(--color-secundario);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+section:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+section h2 {
+    color: var(--color-titulo);
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: var(--color-subtitulo);
+}
+
+.habitante-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.habitante-image {
+    max-width: 200px; /* Tamaño máximo para la imagen */
+    border-radius: 10px;
+}
+
+.reverse {
+    flex-direction: row-reverse; /* Cambia el orden de los elementos */
+}
+
+.geografia-container {
+    display: flex;
+    align-items: flex-start; /* Alinear verticalmente al inicio */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px; /* Espacio entre la información y el mapa */
+}
+
+.geografia-info {
+    flex: 1; /* Ocupar espacio flexible */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.map-container {
+    flex: 1; /* Ocupar espacio flexible */
+    border-radius: 15px;
+    overflow: hidden; /* Asegura que el iframe no sobresalga */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    height: 450px; /* Altura fija para que se vea bien */
+}
+
+.himno-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.columna {
+    flex: 1;
+    min-width: 300px; /* Ajusta según necesites */
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.himno-image {
+    display: block;
+    margin: 20px auto; /* Centrar la imagen */
+    width: 100%; /* Ajustar al tamaño del contenedor */
+    max-width: 600px; /* Limitar el tamaño máximo */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease;
+}
+
+.himno-image:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: var(--color-secundario);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.alcalde-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.alcalde-image {
+    max-width: 150px; /* Ajusta el tamaño de la imagen según necesites */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.economia-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.economia-item {
+    position: relative;
+    width: 23%; /* Ajusta según el espacio que quieras entre las imágenes */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.economia-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.economia-item:hover .economia-image {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.economia-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--color-titulo);
+}
+
+#economia-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--color-text);
+    display: none;
+}
+
+#economia-info.show {
+    display: block;
+}
+
+.economia-info-hidden {
+display: none;
+}
+.economia-info-hidden.show {
+display: block;
+}
+.economia-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.economia-item {
+cursor: pointer;
+text-align: center;
+}
+.economia-image {
+width: 150px;
+height: auto;
+border-radius: 8px;
+}
+             
+        

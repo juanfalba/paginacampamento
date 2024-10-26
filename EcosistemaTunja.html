@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./EcosistemaTunja.css">
+    <title>Tunja - Ecosistema</title> 
+</head>
+<body>
+    <header>
+        <nav id="menu">
+          <ul id="lista-menu">
+            <a href="inicioTunja.html" class="enlace-menu"><li class="menu-item">Tunja</li></a>
+            <a href="EcosistemaTunja.html" class="enlace-menu"><li class="menu-item">Ecosistema y mas</li></a>
+            <a href="planturisticoTunja.html" class="enlace-menu"><li class="menu-item">Plan turistico</li></a>
+            <a href="SitiosturisticosTunja.html" class="enlace-menu"><li class="menu-item">Sitios turisticos</li></a>
+            <a href="ContactoTunja.html" class="enlace-menu"><li class="menu-item">Contacto</li></a>
+          </ul>
+        </nav>
+        <a href="index.html" id="logo-link"><img src="img/mef.PNG" alt="Logo" id="logo"></a>
+    </header>
+
+  <main>
+    <h1 id="titulo">Tunja - Ecosistema y Biodiversidad</h1>
+
+    <section class="clima">
+      <div class="texto-clima">
+          <h2>Climatología</h2>
+          <p>Según la clasificación de Köppen, Tunja posee un clima de tipo templado ecuatorial Csbi: templado y frío de alta montaña. Al igual que todas las regiones de la Zona Intertropical, el clima está influenciado principalmente por la altitud, las precipitaciones (lluvias) y las corrientes oceánicas, que causan leves variaciones de temperatura, siendo las más significativas las diferencias entre el día y la noche.</p>
+          <p>La temperatura promedio anual es de 13,2 °C y la presión barométrica es de 1024 hPa.</p>
+      </div>
+      <img src="img/climatunja.PNG" alt="Imagen representativa del clima" class="imagen-clima">
+  </section>
+
+  <section class="biodiversidad"> 
+    <h2>Biodiversidad</h2>
+    <p>Tunja, la capital de Boyacá en Colombia, es una región rica en biodiversidad. Está situada en una zona de transición entre los Andes y los valles interandinos, lo que crea una variedad de ecosistemas.</p>
+    <p>En Tunja, puedes encontrar desde páramos hasta bosques de niebla, lo que favorece la presencia de diversas especies de flora y fauna.</p>
+    
+    <div class="galeria-flora-fauna">
+        <div class="elemento-galeria">
+            <img src="img/flortunja.jpeg" alt="Flor 1" class="imagen-flora-fauna" data-info="Dedalera (Digitalis purpurea)">
+        </div>
+        <div class="elemento-galeria">
+            <img src="img/flortunja2.jpg" alt="Flor 2" class="imagen-flora-fauna" data-info="Cabeza de Chivo (Dryopteris wallichiana)">
+        </div>
+        <div class="elemento-galeria">
+            <img src="img/animaltunja.jpg" alt="Animal 1" class="imagen-flora-fauna" data-info="Sinsonte Común (Mimus gilvus)">
+        </div>
+        <div class="elemento-galeria">
+            <img src="img/animaltunja2.jpg" alt="Animal 2" class="imagen-flora-fauna" data-info="Rana Sabanera (Dendropsophus molitor)">
+        </div>
+    </div>
+    
+    <p id="info-especie" class="info-especie"></p>
+    
+    <script>
+        const elementos = document.querySelectorAll('.imagen-flora-fauna');
+        const infoEspecie = document.getElementById('info-especie');
+
+        elementos.forEach(elemento => {
+            elemento.addEventListener('mouseover', function() {
+                infoEspecie.textContent = this.getAttribute('data-info');
+                infoEspecie.style.display = 'block'; // Muestra la información
+            });
+
+            elemento.addEventListener('mouseout', function() {
+                infoEspecie.style.display = 'none'; // Oculta la información
+            });
+        });
+    </script>
+</section>
+
+    
+<section class="ecosistemas">
+  <h2>Ecosistemas</h2>
+
+  <div class="ecosistema-item">
+      <p>Bosques de niebla: Estos bosques se encuentran en zonas montañosas y son ricos en biodiversidad, con una gran variedad de plantas y animales, incluidos colibríes y mariposas.</p>
+      <img src="img/bosquetunja.jpg" alt="Bosques de niebla" class="imagen-seccion">
+  </div>
+
+  <div class="ecosistema-item">
+      <img src="img/paramotunja.jpg" alt="Ecosistemas de Páramo" class="imagen-seccion">
+      <p>Páramo: Ubicado en altitudes elevadas, es hogar de especies adaptadas al frío, como frailejones y diversas aves.</p>
+  </div>
+
+  <div class="ecosistema-item">
+      <p>Zonas de cultivo: La agricultura es una actividad importante, con cultivos como papa, maíz y hortalizas, que coexisten con ecosistemas naturales.</p>
+      <img src="img/agricultura.jpg" alt="Zonas de Cultivo" class="imagen-seccion">
+  </div>
+
+  <div class="ecosistema-item">
+      <img src="img/riotunja.jpg" alt="Ríos y cuerpos de agua de Tibirita" class="imagen-seccion">
+      <p>Ríos y humedales: Los cuerpos de agua en la región son vitales para la fauna acuática y para el abastecimiento de agua en las comunidades.</p>
+  </div>
+
+  <div class="ecosistema-item">
+      <p>Sabana: En áreas más bajas, se encuentran ecosistemas de sabana con vegetación herbácea y arbustiva.</p>
+      <img src="img/sabanatunja.png" alt="Ecosistemas de Sabana" class="imagen-seccion">
+  </div>
+</section>
+
+  </main>
+</body>
+</html>
